@@ -23,6 +23,7 @@ Partial Class Frm_Principal_01
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.lbl_Principal = New System.Windows.Forms.Label()
+        Me.btm_acao = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'lbl_Principal
@@ -34,11 +35,21 @@ Partial Class Frm_Principal_01
         Me.lbl_Principal.TabIndex = 0
         Me.lbl_Principal.Text = "Label1"
         '
+        'btm_acao
+        '
+        Me.btm_acao.Location = New System.Drawing.Point(12, 29)
+        Me.btm_acao.Name = "btm_acao"
+        Me.btm_acao.Size = New System.Drawing.Size(130, 42)
+        Me.btm_acao.TabIndex = 1
+        Me.btm_acao.Text = "Button1"
+        Me.btm_acao.UseVisualStyleBackColor = True
+        '
         'Frm_Principal_01
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.Controls.Add(Me.btm_acao)
         Me.Controls.Add(Me.lbl_Principal)
         Me.Name = "Frm_Principal_01"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
@@ -49,4 +60,5 @@ Partial Class Frm_Principal_01
     End Sub
 
     Friend WithEvents lbl_Principal As Label
+    Friend WithEvents btm_acao As Button
 End Class
