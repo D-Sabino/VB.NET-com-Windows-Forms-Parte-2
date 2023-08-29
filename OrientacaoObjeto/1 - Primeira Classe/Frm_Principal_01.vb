@@ -12,10 +12,12 @@
 
     Private Sub btm_acao_Click(sender As Object, e As EventArgs) Handles btm_acao.Click
 
-        Dim Titular As String = "Gabriela"
-        Dim Agencia As Integer = 863
-        Dim Contar As Integer = 863141
-        Dim Saldo As Integer = 100
+        'Dim Titular As String = "Gabriela"
+        'Dim Agencia As Integer = 863
+        'Dim Contar As Integer = 863141
+        'Dim Saldo As Integer = 100
+
+        Dim ContaCorrente1 As New ContaCorrente
 
     End Sub
 End Class
