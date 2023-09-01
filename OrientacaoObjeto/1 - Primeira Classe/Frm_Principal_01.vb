@@ -8,6 +8,7 @@
         Me.Text = "1 - Primeira classe"
         lbl_Principal.Text = "1 - Primeira classe"
         btm_acao.Text = "Conta Daniela"
+        btm_acao2.Text = "Conta Bruno"
         lbl_saldo = "Saldo"
         lbl_incremento.Text = "Incremento"
     End Sub
@@ -30,6 +31,13 @@
 
         Dim vIncremento As Double = Val(txt_incremento.Text)
         ContaDaDaniela.Saldo += vIncremento
+
+    End Sub
+
+    Private Sub btm_acao2_Click(sender As Object, e As EventArgs) Handles btm_acao2.Click
+        Dim ContaDoBruno As New ContaCorrente
+
+
 
     End Sub
 End Class

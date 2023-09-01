@@ -28,6 +28,7 @@ Partial Class Frm_Principal_01
         Me.lbl_incremento = New System.Windows.Forms.Label()
         Me.txt_saldo = New System.Windows.Forms.TextBox()
         Me.txt_incremento = New System.Windows.Forms.TextBox()
+        Me.btm_acao2 = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'lbl_Principal
@@ -80,11 +81,21 @@ Partial Class Frm_Principal_01
         Me.txt_incremento.Size = New System.Drawing.Size(100, 22)
         Me.txt_incremento.TabIndex = 5
         '
+        'btm_acao2
+        '
+        Me.btm_acao2.Location = New System.Drawing.Point(369, 29)
+        Me.btm_acao2.Name = "btm_acao2"
+        Me.btm_acao2.Size = New System.Drawing.Size(130, 42)
+        Me.btm_acao2.TabIndex = 6
+        Me.btm_acao2.Text = "Button1"
+        Me.btm_acao2.UseVisualStyleBackColor = True
+        '
         'Frm_Principal_01
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.Controls.Add(Me.btm_acao2)
         Me.Controls.Add(Me.txt_incremento)
         Me.Controls.Add(Me.txt_saldo)
         Me.Controls.Add(Me.lbl_incremento)
@@ -105,4 +116,5 @@ Partial Class Frm_Principal_01
     Friend WithEvents lbl_incremento As Label
     Friend WithEvents txt_saldo As TextBox
     Friend WithEvents txt_incremento As TextBox
+    Friend WithEvents btm_acao2 As Button
 End Class
