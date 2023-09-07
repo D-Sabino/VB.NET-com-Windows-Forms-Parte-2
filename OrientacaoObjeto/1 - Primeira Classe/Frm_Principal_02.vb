@@ -30,16 +30,16 @@
     End Sub
 
     Private Sub btm_Sacar_Click(sender As Object, e As EventArgs) Handles btm_Sacar.Click
+        txt_ResultadoSaque.Text = ""
+        txt_Saldo.Text = ""
 
         Dim ValorSacar As Double = Val(txt_ValorSacar.Text)
+        Dim RetornoSaque As Boolean = ContaDaGabriela.Sacar(ValorSacar)
 
-        If ContaDaGabriela.Saldo >= ValorSacar Then
-            ContaDaGabriela.Saldo -= ValorSacar
-
-            txt_Saldo.Text = ContaDaGabriela.Saldo.ToString
+        If RetornoSaque Then
             txt_ResultadoSaque.Text = "Saldo realizado com sucesso"
-
             txt_SaldoAtual.Text = ContaDaGabriela.Saldo.ToString
+            txt_Saldo.Text = ContaDaGabriela.Saldo.ToString
         Else
             txt_ResultadoSaque.Text = "Saque não pode ser realizado"
         End If
