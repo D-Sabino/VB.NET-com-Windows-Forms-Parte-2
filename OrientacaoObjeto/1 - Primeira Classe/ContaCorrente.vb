@@ -7,7 +7,7 @@
     Public Function Sacar(ValorSacar As Double) As Boolean
         Dim Retorno As Boolean
 
-        If Saldo <= ValorSacar Then
+        If Saldo < ValorSacar Then
             Retorno = False
         Else
             Saldo -= ValorSacar
@@ -17,6 +17,9 @@
         Return Retorno
     End Function
 
+    Public Sub Depositar(ValorDepositar As Double)
+        Saldo += ValorDepositar
+    End Sub
 
 End Class
 
