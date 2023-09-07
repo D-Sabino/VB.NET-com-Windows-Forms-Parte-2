@@ -23,17 +23,34 @@ Partial Class Frm_Principal_02
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.lbl_Principal02 = New System.Windows.Forms.Label()
-        Me.lbl_ValorSacar = New System.Windows.Forms.Label()
-        Me.txt_Valor = New System.Windows.Forms.TextBox()
-        Me.btm_Sacar = New System.Windows.Forms.Button()
-        Me.txt_Saldo = New System.Windows.Forms.TextBox()
-        Me.lbl_Saldo = New System.Windows.Forms.Label()
-        Me.txt_Resultado = New System.Windows.Forms.TextBox()
-        Me.lbl_ResultadoSaque = New System.Windows.Forms.Label()
-        Me.txt_SaldoAtual = New System.Windows.Forms.TextBox()
-        Me.lbl_SaldoAtual = New System.Windows.Forms.Label()
-        Me.lbl_BemVindo = New System.Windows.Forms.Label()
-        Me.btm_Depositar = New System.Windows.Forms.Button()
+        Me.lbl_ValorSacar_Gabriela = New System.Windows.Forms.Label()
+        Me.txt_Valor_Gabriela = New System.Windows.Forms.TextBox()
+        Me.btm_Sacar_Gabriela = New System.Windows.Forms.Button()
+        Me.txt_Saldo_Gabriela = New System.Windows.Forms.TextBox()
+        Me.lbl_Saldo_Gabriela = New System.Windows.Forms.Label()
+        Me.txt_Resultado_Gabriela = New System.Windows.Forms.TextBox()
+        Me.lbl_ResultadoSaque_Gabriela = New System.Windows.Forms.Label()
+        Me.txt_SaldoAtual_Gabriela = New System.Windows.Forms.TextBox()
+        Me.lbl_SaldoAtual_Gabriela = New System.Windows.Forms.Label()
+        Me.lbl_BemVindo_Gabriela = New System.Windows.Forms.Label()
+        Me.btm_Depositar_Gabriela = New System.Windows.Forms.Button()
+        Me.txt_Extrato_Gabriela = New System.Windows.Forms.TextBox()
+        Me.grp_Gabriela = New System.Windows.Forms.GroupBox()
+        Me.grp_Bruno = New System.Windows.Forms.GroupBox()
+        Me.txt_Extrato_Bruno = New System.Windows.Forms.TextBox()
+        Me.lbl_ValorSacar_Bruno = New System.Windows.Forms.Label()
+        Me.btm_Depositar_Bruno = New System.Windows.Forms.Button()
+        Me.txt_Valor_Bruno = New System.Windows.Forms.TextBox()
+        Me.lbl_BemVindo_Bruno = New System.Windows.Forms.Label()
+        Me.btm_Sacar_Bruno = New System.Windows.Forms.Button()
+        Me.txt_SaldoAtual_Bruno = New System.Windows.Forms.TextBox()
+        Me.lbl_Saldo_Bruno = New System.Windows.Forms.Label()
+        Me.lbl_SaldoAtual_Bruno = New System.Windows.Forms.Label()
+        Me.txt_Saldo_Bruno = New System.Windows.Forms.TextBox()
+        Me.txt_Resultado_Bruno = New System.Windows.Forms.TextBox()
+        Me.lbl_ResultadoSaque_Bruno = New System.Windows.Forms.Label()
+        Me.grp_Gabriela.SuspendLayout()
+        Me.grp_Bruno.SuspendLayout()
         Me.SuspendLayout()
         '
         'lbl_Principal02
@@ -45,132 +62,293 @@ Partial Class Frm_Principal_02
         Me.lbl_Principal02.TabIndex = 0
         Me.lbl_Principal02.Text = "Label1"
         '
-        'lbl_ValorSacar
+        'lbl_ValorSacar_Gabriela
         '
-        Me.lbl_ValorSacar.AutoSize = True
-        Me.lbl_ValorSacar.Location = New System.Drawing.Point(12, 169)
-        Me.lbl_ValorSacar.Name = "lbl_ValorSacar"
-        Me.lbl_ValorSacar.Size = New System.Drawing.Size(51, 17)
-        Me.lbl_ValorSacar.TabIndex = 1
-        Me.lbl_ValorSacar.Text = "Label1"
+        Me.lbl_ValorSacar_Gabriela.AutoSize = True
+        Me.lbl_ValorSacar_Gabriela.Location = New System.Drawing.Point(10, 135)
+        Me.lbl_ValorSacar_Gabriela.Name = "lbl_ValorSacar_Gabriela"
+        Me.lbl_ValorSacar_Gabriela.Size = New System.Drawing.Size(51, 17)
+        Me.lbl_ValorSacar_Gabriela.TabIndex = 1
+        Me.lbl_ValorSacar_Gabriela.Text = "Label1"
         '
-        'txt_Valor
+        'txt_Valor_Gabriela
         '
-        Me.txt_Valor.Location = New System.Drawing.Point(15, 189)
-        Me.txt_Valor.Name = "txt_Valor"
-        Me.txt_Valor.Size = New System.Drawing.Size(267, 22)
-        Me.txt_Valor.TabIndex = 2
+        Me.txt_Valor_Gabriela.Location = New System.Drawing.Point(13, 155)
+        Me.txt_Valor_Gabriela.Name = "txt_Valor_Gabriela"
+        Me.txt_Valor_Gabriela.Size = New System.Drawing.Size(267, 22)
+        Me.txt_Valor_Gabriela.TabIndex = 2
         '
-        'btm_Sacar
+        'btm_Sacar_Gabriela
         '
-        Me.btm_Sacar.Location = New System.Drawing.Point(15, 257)
-        Me.btm_Sacar.Name = "btm_Sacar"
-        Me.btm_Sacar.Size = New System.Drawing.Size(267, 29)
-        Me.btm_Sacar.TabIndex = 3
-        Me.btm_Sacar.Text = "Button1"
-        Me.btm_Sacar.UseVisualStyleBackColor = True
+        Me.btm_Sacar_Gabriela.Location = New System.Drawing.Point(13, 223)
+        Me.btm_Sacar_Gabriela.Name = "btm_Sacar_Gabriela"
+        Me.btm_Sacar_Gabriela.Size = New System.Drawing.Size(267, 29)
+        Me.btm_Sacar_Gabriela.TabIndex = 3
+        Me.btm_Sacar_Gabriela.Text = "Button1"
+        Me.btm_Sacar_Gabriela.UseVisualStyleBackColor = True
         '
-        'txt_Saldo
+        'txt_Saldo_Gabriela
         '
-        Me.txt_Saldo.Location = New System.Drawing.Point(15, 330)
-        Me.txt_Saldo.Name = "txt_Saldo"
-        Me.txt_Saldo.Size = New System.Drawing.Size(267, 22)
-        Me.txt_Saldo.TabIndex = 5
+        Me.txt_Saldo_Gabriela.Location = New System.Drawing.Point(13, 296)
+        Me.txt_Saldo_Gabriela.Name = "txt_Saldo_Gabriela"
+        Me.txt_Saldo_Gabriela.Size = New System.Drawing.Size(267, 22)
+        Me.txt_Saldo_Gabriela.TabIndex = 5
         '
-        'lbl_Saldo
+        'lbl_Saldo_Gabriela
         '
-        Me.lbl_Saldo.AutoSize = True
-        Me.lbl_Saldo.Location = New System.Drawing.Point(12, 310)
-        Me.lbl_Saldo.Name = "lbl_Saldo"
-        Me.lbl_Saldo.Size = New System.Drawing.Size(51, 17)
-        Me.lbl_Saldo.TabIndex = 4
-        Me.lbl_Saldo.Text = "Label1"
+        Me.lbl_Saldo_Gabriela.AutoSize = True
+        Me.lbl_Saldo_Gabriela.Location = New System.Drawing.Point(10, 276)
+        Me.lbl_Saldo_Gabriela.Name = "lbl_Saldo_Gabriela"
+        Me.lbl_Saldo_Gabriela.Size = New System.Drawing.Size(51, 17)
+        Me.lbl_Saldo_Gabriela.TabIndex = 4
+        Me.lbl_Saldo_Gabriela.Text = "Label1"
         '
-        'txt_Resultado
+        'txt_Resultado_Gabriela
         '
-        Me.txt_Resultado.Location = New System.Drawing.Point(15, 380)
-        Me.txt_Resultado.Name = "txt_Resultado"
-        Me.txt_Resultado.Size = New System.Drawing.Size(267, 22)
-        Me.txt_Resultado.TabIndex = 7
+        Me.txt_Resultado_Gabriela.Location = New System.Drawing.Point(13, 346)
+        Me.txt_Resultado_Gabriela.Name = "txt_Resultado_Gabriela"
+        Me.txt_Resultado_Gabriela.Size = New System.Drawing.Size(267, 22)
+        Me.txt_Resultado_Gabriela.TabIndex = 7
         '
-        'lbl_ResultadoSaque
+        'lbl_ResultadoSaque_Gabriela
         '
-        Me.lbl_ResultadoSaque.AutoSize = True
-        Me.lbl_ResultadoSaque.Location = New System.Drawing.Point(12, 360)
-        Me.lbl_ResultadoSaque.Name = "lbl_ResultadoSaque"
-        Me.lbl_ResultadoSaque.Size = New System.Drawing.Size(51, 17)
-        Me.lbl_ResultadoSaque.TabIndex = 6
-        Me.lbl_ResultadoSaque.Text = "Label1"
+        Me.lbl_ResultadoSaque_Gabriela.AutoSize = True
+        Me.lbl_ResultadoSaque_Gabriela.Location = New System.Drawing.Point(10, 326)
+        Me.lbl_ResultadoSaque_Gabriela.Name = "lbl_ResultadoSaque_Gabriela"
+        Me.lbl_ResultadoSaque_Gabriela.Size = New System.Drawing.Size(51, 17)
+        Me.lbl_ResultadoSaque_Gabriela.TabIndex = 6
+        Me.lbl_ResultadoSaque_Gabriela.Text = "Label1"
         '
-        'txt_SaldoAtual
+        'txt_SaldoAtual_Gabriela
         '
-        Me.txt_SaldoAtual.Location = New System.Drawing.Point(15, 131)
-        Me.txt_SaldoAtual.Name = "txt_SaldoAtual"
-        Me.txt_SaldoAtual.Size = New System.Drawing.Size(267, 22)
-        Me.txt_SaldoAtual.TabIndex = 9
+        Me.txt_SaldoAtual_Gabriela.Location = New System.Drawing.Point(13, 97)
+        Me.txt_SaldoAtual_Gabriela.Name = "txt_SaldoAtual_Gabriela"
+        Me.txt_SaldoAtual_Gabriela.Size = New System.Drawing.Size(267, 22)
+        Me.txt_SaldoAtual_Gabriela.TabIndex = 9
         '
-        'lbl_SaldoAtual
+        'lbl_SaldoAtual_Gabriela
         '
-        Me.lbl_SaldoAtual.AutoSize = True
-        Me.lbl_SaldoAtual.Location = New System.Drawing.Point(12, 111)
-        Me.lbl_SaldoAtual.Name = "lbl_SaldoAtual"
-        Me.lbl_SaldoAtual.Size = New System.Drawing.Size(51, 17)
-        Me.lbl_SaldoAtual.TabIndex = 8
-        Me.lbl_SaldoAtual.Text = "Label1"
+        Me.lbl_SaldoAtual_Gabriela.AutoSize = True
+        Me.lbl_SaldoAtual_Gabriela.Location = New System.Drawing.Point(10, 77)
+        Me.lbl_SaldoAtual_Gabriela.Name = "lbl_SaldoAtual_Gabriela"
+        Me.lbl_SaldoAtual_Gabriela.Size = New System.Drawing.Size(51, 17)
+        Me.lbl_SaldoAtual_Gabriela.TabIndex = 8
+        Me.lbl_SaldoAtual_Gabriela.Text = "Label1"
         '
-        'lbl_BemVindo
+        'lbl_BemVindo_Gabriela
         '
-        Me.lbl_BemVindo.AutoSize = True
-        Me.lbl_BemVindo.Location = New System.Drawing.Point(12, 61)
-        Me.lbl_BemVindo.Name = "lbl_BemVindo"
-        Me.lbl_BemVindo.Size = New System.Drawing.Size(51, 17)
-        Me.lbl_BemVindo.TabIndex = 10
-        Me.lbl_BemVindo.Text = "Label1"
+        Me.lbl_BemVindo_Gabriela.AutoSize = True
+        Me.lbl_BemVindo_Gabriela.Location = New System.Drawing.Point(10, 27)
+        Me.lbl_BemVindo_Gabriela.Name = "lbl_BemVindo_Gabriela"
+        Me.lbl_BemVindo_Gabriela.Size = New System.Drawing.Size(51, 17)
+        Me.lbl_BemVindo_Gabriela.TabIndex = 10
+        Me.lbl_BemVindo_Gabriela.Text = "Label1"
         '
-        'btm_Depositar
+        'btm_Depositar_Gabriela
         '
-        Me.btm_Depositar.Location = New System.Drawing.Point(15, 222)
-        Me.btm_Depositar.Name = "btm_Depositar"
-        Me.btm_Depositar.Size = New System.Drawing.Size(267, 29)
-        Me.btm_Depositar.TabIndex = 11
-        Me.btm_Depositar.Text = "Button1"
-        Me.btm_Depositar.UseVisualStyleBackColor = True
+        Me.btm_Depositar_Gabriela.Location = New System.Drawing.Point(13, 188)
+        Me.btm_Depositar_Gabriela.Name = "btm_Depositar_Gabriela"
+        Me.btm_Depositar_Gabriela.Size = New System.Drawing.Size(267, 29)
+        Me.btm_Depositar_Gabriela.TabIndex = 11
+        Me.btm_Depositar_Gabriela.Text = "Button1"
+        Me.btm_Depositar_Gabriela.UseVisualStyleBackColor = True
+        '
+        'txt_Extrato_Gabriela
+        '
+        Me.txt_Extrato_Gabriela.Location = New System.Drawing.Point(301, 97)
+        Me.txt_Extrato_Gabriela.Multiline = True
+        Me.txt_Extrato_Gabriela.Name = "txt_Extrato_Gabriela"
+        Me.txt_Extrato_Gabriela.ScrollBars = System.Windows.Forms.ScrollBars.Vertical
+        Me.txt_Extrato_Gabriela.Size = New System.Drawing.Size(385, 271)
+        Me.txt_Extrato_Gabriela.TabIndex = 12
+        '
+        'grp_Gabriela
+        '
+        Me.grp_Gabriela.Controls.Add(Me.txt_Extrato_Gabriela)
+        Me.grp_Gabriela.Controls.Add(Me.lbl_ValorSacar_Gabriela)
+        Me.grp_Gabriela.Controls.Add(Me.btm_Depositar_Gabriela)
+        Me.grp_Gabriela.Controls.Add(Me.txt_Valor_Gabriela)
+        Me.grp_Gabriela.Controls.Add(Me.lbl_BemVindo_Gabriela)
+        Me.grp_Gabriela.Controls.Add(Me.btm_Sacar_Gabriela)
+        Me.grp_Gabriela.Controls.Add(Me.txt_SaldoAtual_Gabriela)
+        Me.grp_Gabriela.Controls.Add(Me.lbl_Saldo_Gabriela)
+        Me.grp_Gabriela.Controls.Add(Me.lbl_SaldoAtual_Gabriela)
+        Me.grp_Gabriela.Controls.Add(Me.txt_Saldo_Gabriela)
+        Me.grp_Gabriela.Controls.Add(Me.txt_Resultado_Gabriela)
+        Me.grp_Gabriela.Controls.Add(Me.lbl_ResultadoSaque_Gabriela)
+        Me.grp_Gabriela.Location = New System.Drawing.Point(12, 42)
+        Me.grp_Gabriela.Name = "grp_Gabriela"
+        Me.grp_Gabriela.Size = New System.Drawing.Size(699, 382)
+        Me.grp_Gabriela.TabIndex = 13
+        Me.grp_Gabriela.TabStop = False
+        Me.grp_Gabriela.Text = "GroupBox1"
+        '
+        'grp_Bruno
+        '
+        Me.grp_Bruno.Controls.Add(Me.txt_Extrato_Bruno)
+        Me.grp_Bruno.Controls.Add(Me.lbl_ValorSacar_Bruno)
+        Me.grp_Bruno.Controls.Add(Me.btm_Depositar_Bruno)
+        Me.grp_Bruno.Controls.Add(Me.txt_Valor_Bruno)
+        Me.grp_Bruno.Controls.Add(Me.lbl_BemVindo_Bruno)
+        Me.grp_Bruno.Controls.Add(Me.btm_Sacar_Bruno)
+        Me.grp_Bruno.Controls.Add(Me.txt_SaldoAtual_Bruno)
+        Me.grp_Bruno.Controls.Add(Me.lbl_Saldo_Bruno)
+        Me.grp_Bruno.Controls.Add(Me.lbl_SaldoAtual_Bruno)
+        Me.grp_Bruno.Controls.Add(Me.txt_Saldo_Bruno)
+        Me.grp_Bruno.Controls.Add(Me.txt_Resultado_Bruno)
+        Me.grp_Bruno.Controls.Add(Me.lbl_ResultadoSaque_Bruno)
+        Me.grp_Bruno.Location = New System.Drawing.Point(717, 42)
+        Me.grp_Bruno.Name = "grp_Bruno"
+        Me.grp_Bruno.Size = New System.Drawing.Size(699, 382)
+        Me.grp_Bruno.TabIndex = 14
+        Me.grp_Bruno.TabStop = False
+        Me.grp_Bruno.Text = "GroupBox1"
+        '
+        'txt_Extrato_Bruno
+        '
+        Me.txt_Extrato_Bruno.Location = New System.Drawing.Point(301, 97)
+        Me.txt_Extrato_Bruno.Multiline = True
+        Me.txt_Extrato_Bruno.Name = "txt_Extrato_Bruno"
+        Me.txt_Extrato_Bruno.ScrollBars = System.Windows.Forms.ScrollBars.Vertical
+        Me.txt_Extrato_Bruno.Size = New System.Drawing.Size(385, 271)
+        Me.txt_Extrato_Bruno.TabIndex = 12
+        '
+        'lbl_ValorSacar_Bruno
+        '
+        Me.lbl_ValorSacar_Bruno.AutoSize = True
+        Me.lbl_ValorSacar_Bruno.Location = New System.Drawing.Point(10, 135)
+        Me.lbl_ValorSacar_Bruno.Name = "lbl_ValorSacar_Bruno"
+        Me.lbl_ValorSacar_Bruno.Size = New System.Drawing.Size(51, 17)
+        Me.lbl_ValorSacar_Bruno.TabIndex = 1
+        Me.lbl_ValorSacar_Bruno.Text = "Label1"
+        '
+        'btm_Depositar_Bruno
+        '
+        Me.btm_Depositar_Bruno.Location = New System.Drawing.Point(13, 188)
+        Me.btm_Depositar_Bruno.Name = "btm_Depositar_Bruno"
+        Me.btm_Depositar_Bruno.Size = New System.Drawing.Size(267, 29)
+        Me.btm_Depositar_Bruno.TabIndex = 11
+        Me.btm_Depositar_Bruno.Text = "Button1"
+        Me.btm_Depositar_Bruno.UseVisualStyleBackColor = True
+        '
+        'txt_Valor_Bruno
+        '
+        Me.txt_Valor_Bruno.Location = New System.Drawing.Point(13, 155)
+        Me.txt_Valor_Bruno.Name = "txt_Valor_Bruno"
+        Me.txt_Valor_Bruno.Size = New System.Drawing.Size(267, 22)
+        Me.txt_Valor_Bruno.TabIndex = 2
+        '
+        'lbl_BemVindo_Bruno
+        '
+        Me.lbl_BemVindo_Bruno.AutoSize = True
+        Me.lbl_BemVindo_Bruno.Location = New System.Drawing.Point(10, 27)
+        Me.lbl_BemVindo_Bruno.Name = "lbl_BemVindo_Bruno"
+        Me.lbl_BemVindo_Bruno.Size = New System.Drawing.Size(51, 17)
+        Me.lbl_BemVindo_Bruno.TabIndex = 10
+        Me.lbl_BemVindo_Bruno.Text = "Label1"
+        '
+        'btm_Sacar_Bruno
+        '
+        Me.btm_Sacar_Bruno.Location = New System.Drawing.Point(13, 223)
+        Me.btm_Sacar_Bruno.Name = "btm_Sacar_Bruno"
+        Me.btm_Sacar_Bruno.Size = New System.Drawing.Size(267, 29)
+        Me.btm_Sacar_Bruno.TabIndex = 3
+        Me.btm_Sacar_Bruno.Text = "Button1"
+        Me.btm_Sacar_Bruno.UseVisualStyleBackColor = True
+        '
+        'txt_SaldoAtual_Bruno
+        '
+        Me.txt_SaldoAtual_Bruno.Location = New System.Drawing.Point(13, 97)
+        Me.txt_SaldoAtual_Bruno.Name = "txt_SaldoAtual_Bruno"
+        Me.txt_SaldoAtual_Bruno.Size = New System.Drawing.Size(267, 22)
+        Me.txt_SaldoAtual_Bruno.TabIndex = 9
+        '
+        'lbl_Saldo_Bruno
+        '
+        Me.lbl_Saldo_Bruno.AutoSize = True
+        Me.lbl_Saldo_Bruno.Location = New System.Drawing.Point(10, 276)
+        Me.lbl_Saldo_Bruno.Name = "lbl_Saldo_Bruno"
+        Me.lbl_Saldo_Bruno.Size = New System.Drawing.Size(51, 17)
+        Me.lbl_Saldo_Bruno.TabIndex = 4
+        Me.lbl_Saldo_Bruno.Text = "Label1"
+        '
+        'lbl_SaldoAtual_Bruno
+        '
+        Me.lbl_SaldoAtual_Bruno.AutoSize = True
+        Me.lbl_SaldoAtual_Bruno.Location = New System.Drawing.Point(10, 77)
+        Me.lbl_SaldoAtual_Bruno.Name = "lbl_SaldoAtual_Bruno"
+        Me.lbl_SaldoAtual_Bruno.Size = New System.Drawing.Size(51, 17)
+        Me.lbl_SaldoAtual_Bruno.TabIndex = 8
+        Me.lbl_SaldoAtual_Bruno.Text = "Label1"
+        '
+        'txt_Saldo_Bruno
+        '
+        Me.txt_Saldo_Bruno.Location = New System.Drawing.Point(13, 296)
+        Me.txt_Saldo_Bruno.Name = "txt_Saldo_Bruno"
+        Me.txt_Saldo_Bruno.Size = New System.Drawing.Size(267, 22)
+        Me.txt_Saldo_Bruno.TabIndex = 5
+        '
+        'txt_Resultado_Bruno
+        '
+        Me.txt_Resultado_Bruno.Location = New System.Drawing.Point(13, 346)
+        Me.txt_Resultado_Bruno.Name = "txt_Resultado_Bruno"
+        Me.txt_Resultado_Bruno.Size = New System.Drawing.Size(267, 22)
+        Me.txt_Resultado_Bruno.TabIndex = 7
+        '
+        'lbl_ResultadoSaque_Bruno
+        '
+        Me.lbl_ResultadoSaque_Bruno.AutoSize = True
+        Me.lbl_ResultadoSaque_Bruno.Location = New System.Drawing.Point(10, 326)
+        Me.lbl_ResultadoSaque_Bruno.Name = "lbl_ResultadoSaque_Bruno"
+        Me.lbl_ResultadoSaque_Bruno.Size = New System.Drawing.Size(51, 17)
+        Me.lbl_ResultadoSaque_Bruno.TabIndex = 6
+        Me.lbl_ResultadoSaque_Bruno.Text = "Label1"
         '
         'Frm_Principal_02
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(800, 450)
-        Me.Controls.Add(Me.btm_Depositar)
-        Me.Controls.Add(Me.lbl_BemVindo)
-        Me.Controls.Add(Me.txt_SaldoAtual)
-        Me.Controls.Add(Me.lbl_SaldoAtual)
-        Me.Controls.Add(Me.txt_Resultado)
-        Me.Controls.Add(Me.lbl_ResultadoSaque)
-        Me.Controls.Add(Me.txt_Saldo)
-        Me.Controls.Add(Me.lbl_Saldo)
-        Me.Controls.Add(Me.btm_Sacar)
-        Me.Controls.Add(Me.txt_Valor)
-        Me.Controls.Add(Me.lbl_ValorSacar)
+        Me.ClientSize = New System.Drawing.Size(1424, 450)
+        Me.Controls.Add(Me.grp_Bruno)
+        Me.Controls.Add(Me.grp_Gabriela)
         Me.Controls.Add(Me.lbl_Principal02)
         Me.Name = "Frm_Principal_02"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Frm_Principal02"
+        Me.grp_Gabriela.ResumeLayout(False)
+        Me.grp_Gabriela.PerformLayout()
+        Me.grp_Bruno.ResumeLayout(False)
+        Me.grp_Bruno.PerformLayout()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
     End Sub
 
     Friend WithEvents lbl_Principal02 As Label
-    Friend WithEvents lbl_ValorSacar As Label
-    Friend WithEvents txt_Valor As TextBox
-    Friend WithEvents btm_Sacar As Button
-    Friend WithEvents txt_Saldo As TextBox
-    Friend WithEvents lbl_Saldo As Label
-    Friend WithEvents txt_Resultado As TextBox
-    Friend WithEvents lbl_ResultadoSaque As Label
-    Friend WithEvents txt_SaldoAtual As TextBox
-    Friend WithEvents lbl_SaldoAtual As Label
-    Friend WithEvents lbl_BemVindo As Label
-    Friend WithEvents btm_Depositar As Button
+    Friend WithEvents lbl_ValorSacar_Gabriela As Label
+    Friend WithEvents txt_Valor_Gabriela As TextBox
+    Friend WithEvents btm_Sacar_Gabriela As Button
+    Friend WithEvents txt_Saldo_Gabriela As TextBox
+    Friend WithEvents lbl_Saldo_Gabriela As Label
+    Friend WithEvents txt_Resultado_Gabriela As TextBox
+    Friend WithEvents lbl_ResultadoSaque_Gabriela As Label
+    Friend WithEvents txt_SaldoAtual_Gabriela As TextBox
+    Friend WithEvents lbl_SaldoAtual_Gabriela As Label
+    Friend WithEvents lbl_BemVindo_Gabriela As Label
+    Friend WithEvents btm_Depositar_Gabriela As Button
+    Friend WithEvents txt_Extrato_Gabriela As TextBox
+    Friend WithEvents grp_Gabriela As GroupBox
+    Friend WithEvents grp_Bruno As GroupBox
+    Friend WithEvents txt_Extrato_Bruno As TextBox
+    Friend WithEvents lbl_ValorSacar_Bruno As Label
+    Friend WithEvents btm_Depositar_Bruno As Button
+    Friend WithEvents txt_Valor_Bruno As TextBox
+    Friend WithEvents lbl_BemVindo_Bruno As Label
+    Friend WithEvents btm_Sacar_Bruno As Button
+    Friend WithEvents txt_SaldoAtual_Bruno As TextBox
+    Friend WithEvents lbl_Saldo_Bruno As Label
+    Friend WithEvents lbl_SaldoAtual_Bruno As Label
+    Friend WithEvents txt_Saldo_Bruno As TextBox
+    Friend WithEvents txt_Resultado_Bruno As TextBox
+    Friend WithEvents lbl_ResultadoSaque_Bruno As Label
 End Class
