@@ -20,16 +20,19 @@
         lbl_ResultadoSaque_Gabriela.Text = "Resultado do Saque"
         lbl_SaldoAtual_Gabriela.Text = "Saldo atual"
         grp_Gabriela.Text = "Gabriela"
+        btm_TransferirGabriela.Text = "Realizar transferencia"
 
         txt_SaldoAtual_Gabriela.ReadOnly = True
         txt_Saldo_Gabriela.ReadOnly = True
         txt_Resultado_Gabriela.ReadOnly = True
         txt_Extrato_Gabriela.ReadOnly = True
 
+
         ' Inicializar os dados da classe:
         ContaDaGabriela.Titular = "Gabriela"
         ContaDaGabriela.Agencia = 863
         ContaDaGabriela.Conta = 863141
+
 
         txt_SaldoAtual_Gabriela.Text = ContaDaGabriela.Saldo.ToString
 
@@ -45,6 +48,7 @@
         lbl_ResultadoSaque_Bruno.Text = "Resultado do Saque"
         lbl_SaldoAtual_Bruno.Text = "Saldo atual"
         grp_Bruno.Text = "Bruno"
+        btm_TransferirBruno.Text = "Realizar transferencia"
 
         txt_SaldoAtual_Bruno.ReadOnly = True
         txt_Saldo_Bruno.ReadOnly = True
@@ -71,9 +75,6 @@
 
         If RetornoSaque Then
             txt_Resultado_Gabriela.Text = "Saldo realizado com sucesso"
-            txt_SaldoAtual_Gabriela.Text = ContaDaGabriela.Saldo.ToString
-            txt_SaldoAtual_Gabriela.Text = ContaDaGabriela.Saldo.ToString
-            txt_SaldoAtual_Gabriela.Text = ContaDaGabriela.Saldo.ToString
             txt_SaldoAtual_Gabriela.Text = ContaDaGabriela.Saldo.ToString
             txt_Saldo_Gabriela.Text = ContaDaGabriela.Saldo.ToString
 
@@ -120,9 +121,6 @@
         If RetornoSaque Then
             txt_Resultado_Bruno.Text = "Saldo realizado com sucesso"
             txt_SaldoAtual_Bruno.Text = ContaDoBruno.Saldo.ToString
-            txt_SaldoAtual_Bruno.Text = ContaDoBruno.Saldo.ToString
-            txt_SaldoAtual_Bruno.Text = ContaDoBruno.Saldo.ToString
-            txt_SaldoAtual_Bruno.Text = ContaDoBruno.Saldo.ToString
             txt_Saldo_Bruno.Text = ContaDoBruno.Saldo.ToString
 
             ContaDoBruno.Extrato += Now.ToString + " Saque de " + ValorSacar.ToString + " Saldo " + ContaDoBruno.Saldo.ToString + vbCrLf
@@ -130,5 +128,61 @@
         Else
             txt_Resultado_Bruno.Text = "Saque não pode ser realizado"
         End If
+    End Sub
+
+    Private Sub btm_TransferirGabriela_Click(sender As Object, e As EventArgs) Handles btm_TransferirGabriela.Click
+        txt_Resultado_Gabriela.Text = ""
+        txt_Saldo_Gabriela.Text = ""
+
+        Dim ValorTransferir As Double = Val(txt_Valor_Gabriela.Text)
+        Dim RetornoTransferencia As Boolean = ContaDaGabriela.Transferir(ValorTransferir, ContaDoBruno)
+
+        If RetornoTransferencia Then
+            txt_Resultado_Gabriela.Text = "Transferencia realizada com sucesso"
+
+            txt_SaldoAtual_Gabriela.Text = ContaDaGabriela.Saldo.ToString
+            txt_SaldoAtual_Bruno.Text = ContaDoBruno.Saldo.ToString
+
+            txt_Saldo_Gabriela.Text = ContaDaGabriela.Saldo.ToString
+            txt_Saldo_Bruno.Text = ContaDoBruno.Saldo.ToString
+
+            ContaDaGabriela.Extrato += Now.ToString + " Transferencia de " + ValorTransferir.ToString + " Saldo " + ContaDaGabriela.Saldo.ToString + vbCrLf
+            ContaDoBruno.Extrato += Now.ToString + " Transferencia recebida de " + ValorTransferir.ToString + " Saldo " + ContaDoBruno.Saldo.ToString + vbCrLf
+
+
+            txt_Extrato_Gabriela.Text = ContaDaGabriela.Extrato
+            txt_Extrato_Bruno.Text = ContaDoBruno.Extrato
+        Else
+            txt_Resultado_Gabriela.Text = "Transferencia não pode ser realizada"
+        End If
+
+    End Sub
+
+    Private Sub btm_TransferirBruno_Click(sender As Object, e As EventArgs) Handles btm_TransferirBruno.Click
+        txt_Resultado_Bruno.Text = ""
+        txt_Saldo_Bruno.Text = ""
+
+        Dim ValorTransferir As Double = Val(txt_Valor_Bruno.Text)
+        Dim RetornoTransferencia As Boolean = ContaDoBruno.Transferir(ValorTransferir, ContaDaGabriela)
+
+        If RetornoTransferencia Then
+            txt_Resultado_Bruno.Text = "Transferencia realizada com sucesso"
+
+            txt_SaldoAtual_Gabriela.Text = ContaDaGabriela.Saldo.ToString
+            txt_SaldoAtual_Bruno.Text = ContaDoBruno.Saldo.ToString
+
+            txt_Saldo_Gabriela.Text = ContaDaGabriela.Saldo.ToString
+            txt_Saldo_Bruno.Text = ContaDoBruno.Saldo.ToString
+
+            ContaDoBruno.Extrato += Now.ToString + " Transferencia de " + ValorTransferir.ToString + " Saldo " + ContaDoBruno.Saldo.ToString + vbCrLf
+            ContaDaGabriela.Extrato += Now.ToString + " Transferencia recebida de " + ValorTransferir.ToString + " Saldo " + ContaDaGabriela.Saldo.ToString + vbCrLf
+
+
+            txt_Extrato_Gabriela.Text = ContaDaGabriela.Extrato
+            txt_Extrato_Bruno.Text = ContaDoBruno.Extrato
+        Else
+            txt_Resultado_Gabriela.Text = "Transferencia não pode ser realizada"
+        End If
+
     End Sub
 End Class

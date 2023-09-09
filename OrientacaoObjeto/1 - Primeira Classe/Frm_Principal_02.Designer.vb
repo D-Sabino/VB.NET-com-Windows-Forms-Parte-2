@@ -49,6 +49,8 @@ Partial Class Frm_Principal_02
         Me.txt_Saldo_Bruno = New System.Windows.Forms.TextBox()
         Me.txt_Resultado_Bruno = New System.Windows.Forms.TextBox()
         Me.lbl_ResultadoSaque_Bruno = New System.Windows.Forms.Label()
+        Me.btm_TransferirGabriela = New System.Windows.Forms.Button()
+        Me.btm_TransferirBruno = New System.Windows.Forms.Button()
         Me.grp_Gabriela.SuspendLayout()
         Me.grp_Bruno.SuspendLayout()
         Me.SuspendLayout()
@@ -89,7 +91,7 @@ Partial Class Frm_Principal_02
         '
         'txt_Saldo_Gabriela
         '
-        Me.txt_Saldo_Gabriela.Location = New System.Drawing.Point(13, 296)
+        Me.txt_Saldo_Gabriela.Location = New System.Drawing.Point(13, 342)
         Me.txt_Saldo_Gabriela.Name = "txt_Saldo_Gabriela"
         Me.txt_Saldo_Gabriela.Size = New System.Drawing.Size(267, 22)
         Me.txt_Saldo_Gabriela.TabIndex = 5
@@ -97,7 +99,7 @@ Partial Class Frm_Principal_02
         'lbl_Saldo_Gabriela
         '
         Me.lbl_Saldo_Gabriela.AutoSize = True
-        Me.lbl_Saldo_Gabriela.Location = New System.Drawing.Point(10, 276)
+        Me.lbl_Saldo_Gabriela.Location = New System.Drawing.Point(10, 322)
         Me.lbl_Saldo_Gabriela.Name = "lbl_Saldo_Gabriela"
         Me.lbl_Saldo_Gabriela.Size = New System.Drawing.Size(51, 17)
         Me.lbl_Saldo_Gabriela.TabIndex = 4
@@ -105,7 +107,7 @@ Partial Class Frm_Principal_02
         '
         'txt_Resultado_Gabriela
         '
-        Me.txt_Resultado_Gabriela.Location = New System.Drawing.Point(13, 346)
+        Me.txt_Resultado_Gabriela.Location = New System.Drawing.Point(13, 392)
         Me.txt_Resultado_Gabriela.Name = "txt_Resultado_Gabriela"
         Me.txt_Resultado_Gabriela.Size = New System.Drawing.Size(267, 22)
         Me.txt_Resultado_Gabriela.TabIndex = 7
@@ -113,7 +115,7 @@ Partial Class Frm_Principal_02
         'lbl_ResultadoSaque_Gabriela
         '
         Me.lbl_ResultadoSaque_Gabriela.AutoSize = True
-        Me.lbl_ResultadoSaque_Gabriela.Location = New System.Drawing.Point(10, 326)
+        Me.lbl_ResultadoSaque_Gabriela.Location = New System.Drawing.Point(10, 372)
         Me.lbl_ResultadoSaque_Gabriela.Name = "lbl_ResultadoSaque_Gabriela"
         Me.lbl_ResultadoSaque_Gabriela.Size = New System.Drawing.Size(51, 17)
         Me.lbl_ResultadoSaque_Gabriela.TabIndex = 6
@@ -159,11 +161,12 @@ Partial Class Frm_Principal_02
         Me.txt_Extrato_Gabriela.Multiline = True
         Me.txt_Extrato_Gabriela.Name = "txt_Extrato_Gabriela"
         Me.txt_Extrato_Gabriela.ScrollBars = System.Windows.Forms.ScrollBars.Vertical
-        Me.txt_Extrato_Gabriela.Size = New System.Drawing.Size(385, 271)
+        Me.txt_Extrato_Gabriela.Size = New System.Drawing.Size(385, 317)
         Me.txt_Extrato_Gabriela.TabIndex = 12
         '
         'grp_Gabriela
         '
+        Me.grp_Gabriela.Controls.Add(Me.btm_TransferirGabriela)
         Me.grp_Gabriela.Controls.Add(Me.txt_Extrato_Gabriela)
         Me.grp_Gabriela.Controls.Add(Me.lbl_ValorSacar_Gabriela)
         Me.grp_Gabriela.Controls.Add(Me.btm_Depositar_Gabriela)
@@ -178,13 +181,14 @@ Partial Class Frm_Principal_02
         Me.grp_Gabriela.Controls.Add(Me.lbl_ResultadoSaque_Gabriela)
         Me.grp_Gabriela.Location = New System.Drawing.Point(12, 42)
         Me.grp_Gabriela.Name = "grp_Gabriela"
-        Me.grp_Gabriela.Size = New System.Drawing.Size(699, 382)
+        Me.grp_Gabriela.Size = New System.Drawing.Size(699, 420)
         Me.grp_Gabriela.TabIndex = 13
         Me.grp_Gabriela.TabStop = False
         Me.grp_Gabriela.Text = "GroupBox1"
         '
         'grp_Bruno
         '
+        Me.grp_Bruno.Controls.Add(Me.btm_TransferirBruno)
         Me.grp_Bruno.Controls.Add(Me.txt_Extrato_Bruno)
         Me.grp_Bruno.Controls.Add(Me.lbl_ValorSacar_Bruno)
         Me.grp_Bruno.Controls.Add(Me.btm_Depositar_Bruno)
@@ -199,7 +203,7 @@ Partial Class Frm_Principal_02
         Me.grp_Bruno.Controls.Add(Me.lbl_ResultadoSaque_Bruno)
         Me.grp_Bruno.Location = New System.Drawing.Point(717, 42)
         Me.grp_Bruno.Name = "grp_Bruno"
-        Me.grp_Bruno.Size = New System.Drawing.Size(699, 382)
+        Me.grp_Bruno.Size = New System.Drawing.Size(699, 414)
         Me.grp_Bruno.TabIndex = 14
         Me.grp_Bruno.TabStop = False
         Me.grp_Bruno.Text = "GroupBox1"
@@ -210,7 +214,7 @@ Partial Class Frm_Principal_02
         Me.txt_Extrato_Bruno.Multiline = True
         Me.txt_Extrato_Bruno.Name = "txt_Extrato_Bruno"
         Me.txt_Extrato_Bruno.ScrollBars = System.Windows.Forms.ScrollBars.Vertical
-        Me.txt_Extrato_Bruno.Size = New System.Drawing.Size(385, 271)
+        Me.txt_Extrato_Bruno.Size = New System.Drawing.Size(385, 311)
         Me.txt_Extrato_Bruno.TabIndex = 12
         '
         'lbl_ValorSacar_Bruno
@@ -266,7 +270,7 @@ Partial Class Frm_Principal_02
         'lbl_Saldo_Bruno
         '
         Me.lbl_Saldo_Bruno.AutoSize = True
-        Me.lbl_Saldo_Bruno.Location = New System.Drawing.Point(10, 276)
+        Me.lbl_Saldo_Bruno.Location = New System.Drawing.Point(10, 316)
         Me.lbl_Saldo_Bruno.Name = "lbl_Saldo_Bruno"
         Me.lbl_Saldo_Bruno.Size = New System.Drawing.Size(51, 17)
         Me.lbl_Saldo_Bruno.TabIndex = 4
@@ -283,14 +287,14 @@ Partial Class Frm_Principal_02
         '
         'txt_Saldo_Bruno
         '
-        Me.txt_Saldo_Bruno.Location = New System.Drawing.Point(13, 296)
+        Me.txt_Saldo_Bruno.Location = New System.Drawing.Point(13, 336)
         Me.txt_Saldo_Bruno.Name = "txt_Saldo_Bruno"
         Me.txt_Saldo_Bruno.Size = New System.Drawing.Size(267, 22)
         Me.txt_Saldo_Bruno.TabIndex = 5
         '
         'txt_Resultado_Bruno
         '
-        Me.txt_Resultado_Bruno.Location = New System.Drawing.Point(13, 346)
+        Me.txt_Resultado_Bruno.Location = New System.Drawing.Point(13, 386)
         Me.txt_Resultado_Bruno.Name = "txt_Resultado_Bruno"
         Me.txt_Resultado_Bruno.Size = New System.Drawing.Size(267, 22)
         Me.txt_Resultado_Bruno.TabIndex = 7
@@ -298,17 +302,35 @@ Partial Class Frm_Principal_02
         'lbl_ResultadoSaque_Bruno
         '
         Me.lbl_ResultadoSaque_Bruno.AutoSize = True
-        Me.lbl_ResultadoSaque_Bruno.Location = New System.Drawing.Point(10, 326)
+        Me.lbl_ResultadoSaque_Bruno.Location = New System.Drawing.Point(10, 366)
         Me.lbl_ResultadoSaque_Bruno.Name = "lbl_ResultadoSaque_Bruno"
         Me.lbl_ResultadoSaque_Bruno.Size = New System.Drawing.Size(51, 17)
         Me.lbl_ResultadoSaque_Bruno.TabIndex = 6
         Me.lbl_ResultadoSaque_Bruno.Text = "Label1"
         '
+        'btm_TransferirGabriela
+        '
+        Me.btm_TransferirGabriela.Location = New System.Drawing.Point(13, 258)
+        Me.btm_TransferirGabriela.Name = "btm_TransferirGabriela"
+        Me.btm_TransferirGabriela.Size = New System.Drawing.Size(267, 29)
+        Me.btm_TransferirGabriela.TabIndex = 13
+        Me.btm_TransferirGabriela.Text = "Button1"
+        Me.btm_TransferirGabriela.UseVisualStyleBackColor = True
+        '
+        'btm_TransferirBruno
+        '
+        Me.btm_TransferirBruno.Location = New System.Drawing.Point(13, 258)
+        Me.btm_TransferirBruno.Name = "btm_TransferirBruno"
+        Me.btm_TransferirBruno.Size = New System.Drawing.Size(267, 29)
+        Me.btm_TransferirBruno.TabIndex = 13
+        Me.btm_TransferirBruno.Text = "Button1"
+        Me.btm_TransferirBruno.UseVisualStyleBackColor = True
+        '
         'Frm_Principal_02
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1424, 450)
+        Me.ClientSize = New System.Drawing.Size(1424, 474)
         Me.Controls.Add(Me.grp_Bruno)
         Me.Controls.Add(Me.grp_Gabriela)
         Me.Controls.Add(Me.lbl_Principal02)
@@ -351,4 +373,6 @@ Partial Class Frm_Principal_02
     Friend WithEvents txt_Saldo_Bruno As TextBox
     Friend WithEvents txt_Resultado_Bruno As TextBox
     Friend WithEvents lbl_ResultadoSaque_Bruno As Label
+    Friend WithEvents btm_TransferirGabriela As Button
+    Friend WithEvents btm_TransferirBruno As Button
 End Class

@@ -22,5 +22,19 @@
         Saldo += ValorDepositar
     End Sub
 
+    Public Function Transferir(ValorTransferencia As Double, ByRef ContaDestino As ContaCorrente) As Boolean
+        Dim Retorno As Boolean
+
+        If Saldo < ValorTransferencia Then
+            Retorno = False
+        Else
+            Saldo -= ValorTransferencia
+            ContaDestino.Depositar(ValorTransferencia)
+            Retorno = True
+        End If
+
+        Return Retorno
+    End Function
+
 End Class
 
