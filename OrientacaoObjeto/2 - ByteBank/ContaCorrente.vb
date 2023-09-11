@@ -1,5 +1,8 @@
-﻿Public Class ContaCorrente
-    Public Titular As String
+﻿Imports _2___ByteBank.ByteBank
+
+Public Class ContaCorrente
+    Public Titular As Cliente
+
     Public Agencia As Integer
     Public Conta As Integer
     Public Saldo As Double = 100
