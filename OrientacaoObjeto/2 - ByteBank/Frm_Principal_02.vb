@@ -1,4 +1,6 @@
-﻿Public Class Frm_Principal_02
+﻿Imports _2___ByteBank.ByteBank
+
+Public Class Frm_Principal_02
 
     Dim ContaDaGabriela As New ContaCorrente
     Dim ContaDoBruno As New ContaCorrente
@@ -28,16 +30,25 @@
         txt_Resultado_Gabriela.ReadOnly = True
         txt_Extrato_Gabriela.ReadOnly = True
 
+        lbl_nome_gabriela.Text = "Nome"
+        btm_nome_gabriela.Text = "..."
 
         ' Inicializar os dados da classe:
-        ContaDaGabriela.Titular = "Gabriela"
+        Dim Gabriela As New Cliente()
+        Gabriela.Nome = "Gabriela"
+        Gabriela.CPF = "123456789"
+        Gabriela.Profissao = "Analista de sistemas"
+        Gabriela.Cidade = "Rio de Janeiro"
+
+
+        ContaDaGabriela.Titular = Gabriela
         ContaDaGabriela.Agencia = 863
         ContaDaGabriela.Conta = 863141
 
 
         txt_SaldoAtual_Gabriela.Text = ContaDaGabriela.Saldo.ToString
 
-        lbl_BemVindo_Gabriela.Text = "Bem vindo " + ContaDaGabriela.Titular + " Agencia: " + ContaDaGabriela.Agencia.ToString +
+        lbl_BemVindo_Gabriela.Text = "Bem vindo " + ContaDaGabriela.Titular.Nome + " Agencia: " + ContaDaGabriela.Agencia.ToString +
             "- Conta Corrente: " + ContaDaGabriela.Conta.ToString
 
 
@@ -56,14 +67,23 @@
         txt_Resultado_Bruno.ReadOnly = True
         txt_Extrato_Bruno.ReadOnly = True
 
+        lbl_nome_bruno.Text = "Nome"
+        btm_nome_bruno.Text = "..."
+
         ' Inicializar os dados da classe:
-        ContaDoBruno.Titular = "Bruno"
+        Dim Bruno As New Cliente
+        Bruno.Nome = "Bruno"
+        Bruno.CPF = "987654321"
+        Bruno.Profissao = "Advogado"
+        Bruno.Cidade = "Sao Paulo"
+
+        ContaDoBruno.Titular = Bruno
         ContaDoBruno.Agencia = 863
         ContaDoBruno.Conta = 863141
 
         txt_SaldoAtual_Bruno.Text = ContaDoBruno.Saldo.ToString
 
-        lbl_BemVindo_Bruno.Text = "Bem vindo " + ContaDoBruno.Titular + " Agencia: " + ContaDoBruno.Agencia.ToString +
+        lbl_BemVindo_Bruno.Text = "Bem vindo " + ContaDoBruno.Titular.Nome + " Agencia: " + ContaDoBruno.Agencia.ToString +
             "- Conta Corrente: " + ContaDoBruno.Conta.ToString
 
     End Sub
@@ -184,5 +204,11 @@
         Else
             txt_Resultado_Gabriela.Text = "Transferencia não pode ser realizada"
         End If
+    End Sub
+
+    Private Sub btm_nome_gabriela_Click(sender As Object, e As EventArgs) Handles btm_nome_gabriela.Click
+        Dim vNome As String = txt_nome_gabriela.Text
+        Gabriela.Nome = vNome
+
     End Sub
 End Class
