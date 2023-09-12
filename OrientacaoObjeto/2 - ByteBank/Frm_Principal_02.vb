@@ -208,7 +208,9 @@ Public Class Frm_Principal_02
 
     Private Sub btm_nome_gabriela_Click(sender As Object, e As EventArgs) Handles btm_nome_gabriela.Click
         Dim vNome As String = txt_nome_gabriela.Text
-        Gabriela.Nome = vNome
+        ContaDaGabriela.Titular.Nome = vNome
 
+        lbl_BemVindo_Gabriela.Text = "Bem vindo " + ContaDaGabriela.Titular.Nome + " Agencia: " + ContaDaGabriela.Agencia.ToString +
+            "- Conta Corrente: " + ContaDaGabriela.Conta.ToString
     End Sub
 End Class
