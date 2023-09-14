@@ -5,8 +5,12 @@ Public Class ContaCorrente
 
     Public Agencia As Integer
     Public Conta As Integer
-    Public Saldo As Double = 100
+    Private Saldo As Double = 100
     Public Extrato As String = ""
+
+    Public Function ObterSaldo() As Double
+        Return Saldo
+    End Function
 
     Public Function Sacar(ValorSacar As Double) As Boolean
         Dim Retorno As Boolean
