@@ -48,7 +48,7 @@ Public Class Frm_Principal_02
 
 
 
-        txt_SaldoAtual_Gabriela.Text = ContaDaGabriela.ObterSaldo().ToString
+        txt_SaldoAtual_Gabriela.Text = ContaDaGabriela.Saldo.ToString
 
         lbl_BemVindo_Gabriela.Text = "Bem vindo " + ContaDaGabriela.Titular.Nome + " Agencia: " + ContaDaGabriela.Agencia.ToString +
             "- Conta Corrente: " + ContaDaGabriela.Conta.ToString
@@ -83,7 +83,7 @@ Public Class Frm_Principal_02
         ContaDoBruno.Agencia = 863
         ContaDoBruno.Conta = 863141
 
-        txt_SaldoAtual_Bruno.Text = ContaDoBruno.ObterSaldo().ToString
+        txt_SaldoAtual_Bruno.Text = ContaDoBruno.GetSaldo().ToString
 
         lbl_BemVindo_Bruno.Text = "Bem vindo " + ContaDoBruno.Titular.Nome + " Agencia: " + ContaDoBruno.Agencia.ToString +
             "- Conta Corrente: " + ContaDoBruno.Conta.ToString
@@ -97,9 +97,9 @@ Public Class Frm_Principal_02
         Dim ValorDepositar As Double = Val(txt_Valor_Gabriela.Text)
         ContaDaGabriela.Depositar(ValorDepositar)
         txt_Resultado_Gabriela.Text = "Deposito realizado com sucesso"
-        txt_SaldoAtual_Gabriela.Text = ContaDaGabriela.ObterSaldo().ToString
+        txt_SaldoAtual_Gabriela.Text = ContaDaGabriela.GetSaldo().ToString
 
-        ContaDaGabriela.Extrato += Now.ToString + " Deposito de " + ValorDepositar.ToString + " Saldo " + ContaDaGabriela.ObterSaldo().ToString + vbCrLf
+        ContaDaGabriela.Extrato += Now.ToString + " Deposito de " + ValorDepositar.ToString + " Saldo " + ContaDaGabriela.GetSaldo().ToString + vbCrLf
         txt_Extrato_Gabriela.Text = ContaDaGabriela.Extrato
     End Sub
 
@@ -112,10 +112,10 @@ Public Class Frm_Principal_02
 
         If RetornoSaque Then
             txt_Resultado_Gabriela.Text = "Saldo realizado com sucesso"
-            txt_SaldoAtual_Gabriela.Text = ContaDaGabriela.ObterSaldo().ToString
-            txt_Saldo_Gabriela.Text = ContaDaGabriela.ObterSaldo().ToString
+            txt_SaldoAtual_Gabriela.Text = ContaDaGabriela.GetSaldo().ToString
+            txt_Saldo_Gabriela.Text = ContaDaGabriela.GetSaldo().ToString
 
-            ContaDaGabriela.Extrato += Now.ToString + " Saque de " + ValorSacar.ToString + " Saldo " + ContaDaGabriela.ObterSaldo().ToString + vbCrLf
+            ContaDaGabriela.Extrato += Now.ToString + " Saque de " + ValorSacar.ToString + " Saldo " + ContaDaGabriela.GetSaldo().ToString + vbCrLf
             txt_Extrato_Gabriela.Text = ContaDaGabriela.Extrato
         Else
             txt_Resultado_Gabriela.Text = "Saque não pode ser realizado"
@@ -132,14 +132,14 @@ Public Class Frm_Principal_02
         If RetornoTransferencia Then
             txt_Resultado_Gabriela.Text = "Transferencia realizada com sucesso"
 
-            txt_SaldoAtual_Gabriela.Text = ContaDaGabriela.ObterSaldo().ToString
-            txt_SaldoAtual_Bruno.Text = ContaDoBruno.ObterSaldo().ToString
+            txt_SaldoAtual_Gabriela.Text = ContaDaGabriela.GetSaldo().ToString
+            txt_SaldoAtual_Bruno.Text = ContaDoBruno.GetSaldo().ToString
 
-            txt_Saldo_Gabriela.Text = ContaDaGabriela.ObterSaldo().ToString
-            txt_Saldo_Bruno.Text = ContaDoBruno.ObterSaldo().ToString
+            txt_Saldo_Gabriela.Text = ContaDaGabriela.GetSaldo().ToString
+            txt_Saldo_Bruno.Text = ContaDoBruno.GetSaldo().ToString
 
-            ContaDaGabriela.Extrato += Now.ToString + " Transferencia de " + ValorTransferir.ToString + " Saldo " + ContaDaGabriela.ObterSaldo().ToString + vbCrLf
-            ContaDoBruno.Extrato += Now.ToString + " Transferencia recebida de " + ValorTransferir.ToString + " Saldo " + ContaDoBruno.ObterSaldo().ToString + vbCrLf
+            ContaDaGabriela.Extrato += Now.ToString + " Transferencia de " + ValorTransferir.ToString + " Saldo " + ContaDaGabriela.GetSaldo().ToString + vbCrLf
+            ContaDoBruno.Extrato += Now.ToString + " Transferencia recebida de " + ValorTransferir.ToString + " Saldo " + ContaDoBruno.GetSaldo().ToString + vbCrLf
 
 
             txt_Extrato_Gabriela.Text = ContaDaGabriela.Extrato
@@ -156,9 +156,9 @@ Public Class Frm_Principal_02
         Dim ValorDepositar As Double = Val(txt_Valor_Bruno.Text)
         ContaDoBruno.Depositar(ValorDepositar)
         txt_Resultado_Bruno.Text = "Deposito realizado com sucesso"
-        txt_SaldoAtual_Bruno.Text = ContaDoBruno.ObterSaldo().ToString
+        txt_SaldoAtual_Bruno.Text = ContaDoBruno.GetSaldo().ToString
 
-        ContaDoBruno.Extrato += Now.ToString + " Deposito de " + ValorDepositar.ToString + " Saldo " + ContaDoBruno.ObterSaldo().ToString + vbCrLf
+        ContaDoBruno.Extrato += Now.ToString + " Deposito de " + ValorDepositar.ToString + " Saldo " + ContaDoBruno.GetSaldo().ToString + vbCrLf
         txt_Extrato_Bruno.Text = ContaDoBruno.Extrato
     End Sub
 
@@ -171,10 +171,10 @@ Public Class Frm_Principal_02
 
         If RetornoSaque Then
             txt_Resultado_Bruno.Text = "Saldo realizado com sucesso"
-            txt_SaldoAtual_Bruno.Text = ContaDoBruno.ObterSaldo().ToString
-            txt_Saldo_Bruno.Text = ContaDoBruno.ObterSaldo().ToString
+            txt_SaldoAtual_Bruno.Text = ContaDoBruno.GetSaldo().ToString
+            txt_Saldo_Bruno.Text = ContaDoBruno.GetSaldo().ToString
 
-            ContaDoBruno.Extrato += Now.ToString + " Saque de " + ValorSacar.ToString + " Saldo " + ContaDoBruno.ObterSaldo().ToString + vbCrLf
+            ContaDoBruno.Extrato += Now.ToString + " Saque de " + ValorSacar.ToString + " Saldo " + ContaDoBruno.GetSaldo().ToString + vbCrLf
             txt_Extrato_Bruno.Text = ContaDoBruno.Extrato
         Else
             txt_Resultado_Bruno.Text = "Saque não pode ser realizado"
@@ -191,14 +191,14 @@ Public Class Frm_Principal_02
         If RetornoTransferencia Then
             txt_Resultado_Bruno.Text = "Transferencia realizada com sucesso"
 
-            txt_SaldoAtual_Gabriela.Text = ContaDaGabriela.ObterSaldo().ToString
-            txt_SaldoAtual_Bruno.Text = ContaDoBruno.ObterSaldo().ToString
+            txt_SaldoAtual_Gabriela.Text = ContaDaGabriela.GetSaldo().ToString
+            txt_SaldoAtual_Bruno.Text = ContaDoBruno.GetSaldo().ToString
 
-            txt_Saldo_Gabriela.Text = ContaDaGabriela.ObterSaldo().ToString
-            txt_Saldo_Bruno.Text = ContaDoBruno.ObterSaldo().ToString
+            txt_Saldo_Gabriela.Text = ContaDaGabriela.GetSaldo().ToString
+            txt_Saldo_Bruno.Text = ContaDoBruno.GetSaldo().ToString
 
-            ContaDoBruno.Extrato += Now.ToString + " Transferencia de " + ValorTransferir.ToString + " Saldo " + ContaDoBruno.ObterSaldo().ToString + vbCrLf
-            ContaDaGabriela.Extrato += Now.ToString + " Transferencia recebida de " + ValorTransferir.ToString + " Saldo " + ContaDaGabriela.ObterSaldo().ToString + vbCrLf
+            ContaDoBruno.Extrato += Now.ToString + " Transferencia de " + ValorTransferir.ToString + " Saldo " + ContaDoBruno.GetSaldo().ToString + vbCrLf
+            ContaDaGabriela.Extrato += Now.ToString + " Transferencia recebida de " + ValorTransferir.ToString + " Saldo " + ContaDaGabriela.GetSaldo().ToString + vbCrLf
 
 
             txt_Extrato_Gabriela.Text = ContaDaGabriela.Extrato
