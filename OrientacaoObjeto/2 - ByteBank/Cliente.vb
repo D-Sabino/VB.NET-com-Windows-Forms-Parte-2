@@ -4,6 +4,14 @@ Namespace ByteBank
 
     Public Class Cliente
 
+#Region "CONSTRUTORES"
+        Public Sub New(m_Nome As String, m_CPF As String)
+            Nome = m_Nome
+            CPF = m_CPF
+        End Sub
+#End Region
+
+
 #Region "PROPRIEDADES"
 
         Private m_Nome As String

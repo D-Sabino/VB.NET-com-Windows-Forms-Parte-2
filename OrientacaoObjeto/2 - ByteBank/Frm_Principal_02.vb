@@ -2,10 +2,10 @@
 
 Public Class Frm_Principal_02
 
-    Dim ContaDaGabriela As New ContaCorrente
-    Dim ContaDoBruno As New ContaCorrente
+    Dim ContaDaGabriela As New ContaCorrente("1000")
+    Dim ContaDoBruno As New ContaCorrente("500")
     'Dim Gabriela As New Cliente()
-    Dim Bruno As New Cliente()
+    Dim Bruno As New Cliente("Bruno", "987654321")
 
     Public Sub New()
 
@@ -56,17 +56,13 @@ Public Class Frm_Principal_02
 
         ' Inicializar os dados da classe da Gabriela
 
-        ContaDaGabriela.Titular = New Cliente()
-        ContaDaGabriela.Titular.Nome = "Gabriela"
-
-        ContaDaGabriela.Titular.CPF = "17486214830"
+        ContaDaGabriela.Titular = New Cliente("Gabriela", "17486214830")
 
         ContaDaGabriela.Titular.Profissao = "Analista de Sistemas"
         ContaDaGabriela.Titular.Cidade = "Rio de Janeiro"
 
         ContaDaGabriela.Agencia = 863
         ContaDaGabriela.Conta = 863141
-        ContaDaGabriela.Saldo = -100
 
         Lbl_BemVindo_Gabriela.Text = "Bem Vindo " + ContaDaGabriela.Titular.Nome + " Agência: " + ContaDaGabriela.Agencia.ToString +
             " Conta Corrente: " + ContaDaGabriela.Conta.ToString + " CPF: " + ContaDaGabriela.Titular.CPF
@@ -74,8 +70,8 @@ Public Class Frm_Principal_02
 
         ' Inicializar os dados da classe do Bruno
 
-        Bruno.Nome = "Bruno"
-        Bruno.CPF = "987654321"
+
+
         Bruno.Profissao = "Advogado"
         Bruno.Cidade = "São Paulo"
 
@@ -85,7 +81,7 @@ Public Class Frm_Principal_02
 
         Lbl_BemVindo_Bruno.Text = "Bem Vindo " + ContaDoBruno.Titular.Nome + " Agência: " + ContaDoBruno.Agencia.ToString +
             " Conta Corrente: " + ContaDoBruno.Conta.ToString
-        Txt_SaldoAtual_Bruno.Text = ContaDaGabriela.Saldo.ToString
+        Txt_SaldoAtual_Bruno.Text = ContaDoBruno.Saldo.ToString
 
     End Sub
 

@@ -3,6 +3,12 @@ Imports _2___ByteBank.ByteBank
 
 Public Class ContaCorrente
 
+#Region "CONSTRUTORES"
+    Public Sub New(m_Saldo As Double)
+        Saldo = m_Saldo
+    End Sub
+#End Region
+
 #Region "PROPRIEDADES"
 
     Private m_Extrato As String
