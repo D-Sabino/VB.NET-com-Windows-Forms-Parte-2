@@ -5,46 +5,68 @@
         InitializeComponent()
 
         ' Adicione qualquer inicialização após a chamada InitializeComponent().
-        Me.Text = "1 - Primeira classe"
-        lbl_Principal.Text = "1 - Primeira classe"
-        btm_acao.Text = "Conta Daniela"
-        btm_acao2.Text = "Conta Bruno"
-        btm_ValRef.Text = "Clique aqui"
-        lbl_saldo.Text = "Saldo"
-        lbl_incremento.Text = "Incremento"
+
+        Me.Text = "1 - Primeira Classe"
+        Lbl_Principal.Text = "1 - Primeira Classe"
+        Btm_Acao.Text = "Conta Gabriela"
+        Lbl_Saldo.Text = "Saldo"
+        Lbl_Incremento.Text = "Incremento"
+        Btm_Acao2.Text = "Conta Bruno"
+        Btm_ValRef.Text = "Clique aqui"
+
     End Sub
 
-    Private Sub btm_acao_Click(sender As Object, e As EventArgs) Handles btm_acao.Click
+    Private Sub Btm_Acao_Click(sender As Object, e As EventArgs) Handles Btm_Acao.Click
 
         'Dim Titular As String = "Gabriela"
         'Dim Agencia As Integer = 863
-        'Dim Contar As Integer = 863141
-        'Dim Saldo As Integer = 100
+        'Dim Conta As Integer = 863141
+        'Dim Saldo As Double = 100
 
-        Dim ContaDaDaniela As New ContaCorrente
-        ContaDaDaniela.Titular = "Daniela"
-        ContaDaDaniela.Agencia = 863
-        ContaDaDaniela.Conta = 863141
-        ContaDaDaniela.Saldo = Val(txt_saldo.Text)
+        'Dim Titular2 As String = "Bruno"
+        'Dim Agencia2 As Integer = 863
+        'Dim Conta2 As Integer = 863142
+        'Dim Saldo2 As Double = 50
 
-        MsgBox("O Saldo da " + ContaDaDaniela.Titular + " na C/C " + ContaDaDaniela.Agencia.ToString _
-               + " - " + ContaDaDaniela.Conta.ToString + " é " + ContaDaDaniela.Saldo.ToString)
+        Dim ContaDaGabriela As New ContaCorrente
 
-        Dim vIncremento As Double = Val(txt_incremento.Text)
-        ContaDaDaniela.Saldo += vIncremento
+        ContaDaGabriela.Titular = "Gabriela"
+        ContaDaGabriela.Agencia = 863
+        ContaDaGabriela.Conta = 863141
+        ContaDaGabriela.Saldo = Val(Txt_Saldo.Text)
+
+        MsgBox("O Saldo da " + ContaDaGabriela.Titular + " na C/C " + ContaDaGabriela.Agencia.ToString _
+               + " - " + ContaDaGabriela.Conta.ToString + " é " + ContaDaGabriela.Saldo.ToString)
+
+        Dim vIncremento As Double = Val(Txt_Incremento.Text)
+        ContaDaGabriela.Saldo += vIncremento
+
+        MsgBox("O Saldo da " + ContaDaGabriela.Titular + " na C/C " + ContaDaGabriela.Agencia.ToString _
+              + " - " + ContaDaGabriela.Conta.ToString + " é " + ContaDaGabriela.Saldo.ToString)
 
     End Sub
 
-    Private Sub btm_acao2_Click(sender As Object, e As EventArgs) Handles btm_acao2.Click
+    Private Sub Btm_Acao2_Click(sender As Object, e As EventArgs) Handles Btm_Acao2.Click
+
+
         Dim ContaDoBruno As New ContaCorrente
 
+        MsgBox(ContaDoBruno.Titular)
+        MsgBox(ContaDoBruno.Agencia)
+        MsgBox(ContaDoBruno.Conta)
+        MsgBox(ContaDoBruno.Saldo)
+
+        ContaDoBruno.Saldo += 100
+
+        MsgBox(ContaDoBruno.Saldo)
 
 
     End Sub
 
-    Private Sub btm_ValRef_Click(sender As Object, e As EventArgs) Handles btm_ValRef.Click
+    Private Sub Btm_ValRef_Click(sender As Object, e As EventArgs) Handles Btm_ValRef.Click
 
-        'Variavel de valor
+        ' TIPO VALOR    
+
         Dim idade As Integer = 20
         Dim idade2 As Integer
 
@@ -56,22 +78,23 @@
 
         MsgBox("Valor da idade " + idade.ToString + " idade2 " + idade2.ToString)
 
-        'Variavel de referencia
-        Dim ContaGabriela As New ContaCorrente()
+
+        Dim ContaDaGabriela As New ContaCorrente()
         Dim ContaDaGabrielaCosta As New ContaCorrente()
 
-        ContaGabriela.Titular = "Gabriela"
-        ContaGabriela.Agencia = 863
-        ContaGabriela.Conta = 863141
+        ContaDaGabriela.Titular = "Gabriela"
+        ContaDaGabriela.Agencia = 863
+        ContaDaGabriela.Conta = 863141
 
-        ContaDaGabrielaCosta = ContaGabriela
+        ContaDaGabrielaCosta = ContaDaGabriela
 
-        MsgBox("Valor da ContaGabriela " + ContaGabriela.Saldo.ToString + " ContaDaGabrielaCosta " + ContaDaGabrielaCosta.Saldo.ToString)
+        MsgBox("Valor da ContaDaGabriela " + ContaDaGabriela.Saldo.ToString +
+               " ContaDaGabrielaCosta " + ContaDaGabrielaCosta.Saldo.ToString)
 
-        ContaGabriela.Saldo = 300
+        ContaDaGabriela.Saldo = 300
 
-        MsgBox("Valor da ContaGabriela " + ContaGabriela.Saldo.ToString + " ContaDaGabrielaCosta " + ContaDaGabrielaCosta.Saldo.ToString)
-
+        MsgBox("Valor da ContaDaGabriela " + ContaDaGabriela.Saldo.ToString +
+       " ContaDaGabrielaCosta " + ContaDaGabrielaCosta.Saldo.ToString)
 
     End Sub
 End Class

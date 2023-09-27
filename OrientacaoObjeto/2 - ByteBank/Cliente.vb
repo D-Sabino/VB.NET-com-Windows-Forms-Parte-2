@@ -1,6 +1,20 @@
-﻿Namespace ByteBank
+﻿
+
+Namespace ByteBank
+
     Public Class Cliente
+
+#Region "PROPRIEDADES"
+
+        Private m_Nome As String
         Public Property Nome As String
+            Get
+                Return m_Nome
+            End Get
+            Set(value As String)
+                m_Nome = value
+            End Set
+        End Property
 
         Private m_CPF As String
         Public Property CPF As String
@@ -15,7 +29,14 @@
         Public Property Profissao As String
         Public Property Cidade As String
 
-#Region "Funcoes especiais"
+#End Region
+
+#Region "MÉTODOS"
+
+#End Region
+
+#Region "FUNÇÕES ESPECIAIS"
+
         Private Function TestaCPF(CPF As String) As String
             Dim dadosArray() As String = {"11111111111", "22222222222", "33333333333", "44444444444", "55555555555", "66666666666", "77777777777", "88888888888", "99999999999"}
             Dim vResultado As Boolean = True
@@ -47,9 +68,12 @@
             End If
             Return CPF
         End Function
+
 #End Region
 
     End Class
+
 End Namespace
+
 
 

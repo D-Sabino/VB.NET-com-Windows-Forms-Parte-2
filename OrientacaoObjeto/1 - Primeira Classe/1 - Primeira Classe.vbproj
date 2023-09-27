@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{9BB0FB81-D61F-4E6A-A7B8-237BD5FEED3F}</ProjectGuid>
+    <ProjectGuid>{9EB39C8C-4707-412B-B22E-4E837DE8299D}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <StartupObject>_1___Primeira_Classe.My.MyApplication</StartupObject>
     <RootNamespace>_1___Primeira_Classe</RootNamespace>
@@ -13,7 +13,6 @@
     <MyType>WindowsForms</MyType>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
-    <Deterministic>true</Deterministic>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -74,17 +73,17 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ContaCorrente.vb" />
-    <Compile Include="Frm_Principal_02.Designer.vb">
-      <DependentUpon>Frm_Principal_02.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Frm_Principal_02.vb">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Include="Frm_Principal_01.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Frm_Principal_01.Designer.vb">
       <DependentUpon>Frm_Principal_01.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_Principal_02.Designer.vb">
+      <DependentUpon>Frm_Principal_02.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_Principal_02.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
@@ -104,11 +103,11 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Frm_Principal_02.resx">
-      <DependentUpon>Frm_Principal_02.vb</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Frm_Principal_01.resx">
       <DependentUpon>Frm_Principal_01.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_Principal_02.resx">
+      <DependentUpon>Frm_Principal_02.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>

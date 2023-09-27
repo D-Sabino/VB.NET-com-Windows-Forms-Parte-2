@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class Frm_Principal_01
     Inherits System.Windows.Forms.Form
 
     'Descartar substituições de formulário para limpar a lista de componentes.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,99 +20,99 @@ Partial Class Frm_Principal_01
     'OBSERVAÇÃO: o procedimento a seguir é exigido pelo Windows Form Designer
     'Pode ser modificado usando o Windows Form Designer.  
     'Não o modifique usando o editor de códigos.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
-        Me.lbl_Principal = New System.Windows.Forms.Label()
-        Me.btm_acao = New System.Windows.Forms.Button()
-        Me.lbl_saldo = New System.Windows.Forms.Label()
-        Me.lbl_incremento = New System.Windows.Forms.Label()
-        Me.txt_saldo = New System.Windows.Forms.TextBox()
-        Me.txt_incremento = New System.Windows.Forms.TextBox()
-        Me.btm_acao2 = New System.Windows.Forms.Button()
-        Me.btm_ValRef = New System.Windows.Forms.Button()
+        Me.Lbl_Principal = New System.Windows.Forms.Label()
+        Me.Btm_Acao = New System.Windows.Forms.Button()
+        Me.Lbl_Saldo = New System.Windows.Forms.Label()
+        Me.Lbl_Incremento = New System.Windows.Forms.Label()
+        Me.Txt_Saldo = New System.Windows.Forms.TextBox()
+        Me.Txt_Incremento = New System.Windows.Forms.TextBox()
+        Me.Btm_Acao2 = New System.Windows.Forms.Button()
+        Me.Btm_ValRef = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
-        'lbl_Principal
+        'Lbl_Principal
         '
-        Me.lbl_Principal.AutoSize = True
-        Me.lbl_Principal.Location = New System.Drawing.Point(12, 9)
-        Me.lbl_Principal.Name = "lbl_Principal"
-        Me.lbl_Principal.Size = New System.Drawing.Size(51, 17)
-        Me.lbl_Principal.TabIndex = 0
-        Me.lbl_Principal.Text = "Label1"
+        Me.Lbl_Principal.AutoSize = True
+        Me.Lbl_Principal.Location = New System.Drawing.Point(12, 9)
+        Me.Lbl_Principal.Name = "Lbl_Principal"
+        Me.Lbl_Principal.Size = New System.Drawing.Size(39, 13)
+        Me.Lbl_Principal.TabIndex = 0
+        Me.Lbl_Principal.Text = "Label1"
         '
-        'btm_acao
+        'Btm_Acao
         '
-        Me.btm_acao.Location = New System.Drawing.Point(12, 29)
-        Me.btm_acao.Name = "btm_acao"
-        Me.btm_acao.Size = New System.Drawing.Size(130, 42)
-        Me.btm_acao.TabIndex = 1
-        Me.btm_acao.Text = "Button1"
-        Me.btm_acao.UseVisualStyleBackColor = True
+        Me.Btm_Acao.Location = New System.Drawing.Point(12, 43)
+        Me.Btm_Acao.Name = "Btm_Acao"
+        Me.Btm_Acao.Size = New System.Drawing.Size(135, 50)
+        Me.Btm_Acao.TabIndex = 1
+        Me.Btm_Acao.Text = "Button1"
+        Me.Btm_Acao.UseVisualStyleBackColor = True
         '
-        'lbl_saldo
+        'Lbl_Saldo
         '
-        Me.lbl_saldo.AutoSize = True
-        Me.lbl_saldo.Location = New System.Drawing.Point(9, 89)
-        Me.lbl_saldo.Name = "lbl_saldo"
-        Me.lbl_saldo.Size = New System.Drawing.Size(51, 17)
-        Me.lbl_saldo.TabIndex = 2
-        Me.lbl_saldo.Text = "Label1"
+        Me.Lbl_Saldo.AutoSize = True
+        Me.Lbl_Saldo.Location = New System.Drawing.Point(12, 107)
+        Me.Lbl_Saldo.Name = "Lbl_Saldo"
+        Me.Lbl_Saldo.Size = New System.Drawing.Size(39, 13)
+        Me.Lbl_Saldo.TabIndex = 2
+        Me.Lbl_Saldo.Text = "Label1"
         '
-        'lbl_incremento
+        'Lbl_Incremento
         '
-        Me.lbl_incremento.AutoSize = True
-        Me.lbl_incremento.Location = New System.Drawing.Point(155, 89)
-        Me.lbl_incremento.Name = "lbl_incremento"
-        Me.lbl_incremento.Size = New System.Drawing.Size(51, 17)
-        Me.lbl_incremento.TabIndex = 3
-        Me.lbl_incremento.Text = "Label2"
+        Me.Lbl_Incremento.AutoSize = True
+        Me.Lbl_Incremento.Location = New System.Drawing.Point(108, 107)
+        Me.Lbl_Incremento.Name = "Lbl_Incremento"
+        Me.Lbl_Incremento.Size = New System.Drawing.Size(39, 13)
+        Me.Lbl_Incremento.TabIndex = 3
+        Me.Lbl_Incremento.Text = "Label2"
         '
-        'txt_saldo
+        'Txt_Saldo
         '
-        Me.txt_saldo.Location = New System.Drawing.Point(12, 109)
-        Me.txt_saldo.Name = "txt_saldo"
-        Me.txt_saldo.Size = New System.Drawing.Size(100, 22)
-        Me.txt_saldo.TabIndex = 4
+        Me.Txt_Saldo.Location = New System.Drawing.Point(15, 123)
+        Me.Txt_Saldo.Name = "Txt_Saldo"
+        Me.Txt_Saldo.Size = New System.Drawing.Size(76, 20)
+        Me.Txt_Saldo.TabIndex = 4
         '
-        'txt_incremento
+        'Txt_Incremento
         '
-        Me.txt_incremento.Location = New System.Drawing.Point(158, 109)
-        Me.txt_incremento.Name = "txt_incremento"
-        Me.txt_incremento.Size = New System.Drawing.Size(100, 22)
-        Me.txt_incremento.TabIndex = 5
+        Me.Txt_Incremento.Location = New System.Drawing.Point(111, 123)
+        Me.Txt_Incremento.Name = "Txt_Incremento"
+        Me.Txt_Incremento.Size = New System.Drawing.Size(76, 20)
+        Me.Txt_Incremento.TabIndex = 5
         '
-        'btm_acao2
+        'Btm_Acao2
         '
-        Me.btm_acao2.Location = New System.Drawing.Point(369, 29)
-        Me.btm_acao2.Name = "btm_acao2"
-        Me.btm_acao2.Size = New System.Drawing.Size(130, 42)
-        Me.btm_acao2.TabIndex = 6
-        Me.btm_acao2.Text = "Button1"
-        Me.btm_acao2.UseVisualStyleBackColor = True
+        Me.Btm_Acao2.Location = New System.Drawing.Point(177, 43)
+        Me.Btm_Acao2.Name = "Btm_Acao2"
+        Me.Btm_Acao2.Size = New System.Drawing.Size(133, 50)
+        Me.Btm_Acao2.TabIndex = 6
+        Me.Btm_Acao2.Text = "Button1"
+        Me.Btm_Acao2.UseVisualStyleBackColor = True
         '
-        'btm_ValRef
+        'Btm_ValRef
         '
-        Me.btm_ValRef.Location = New System.Drawing.Point(523, 29)
-        Me.btm_ValRef.Name = "btm_ValRef"
-        Me.btm_ValRef.Size = New System.Drawing.Size(130, 42)
-        Me.btm_ValRef.TabIndex = 7
-        Me.btm_ValRef.Text = "Button1"
-        Me.btm_ValRef.UseVisualStyleBackColor = True
+        Me.Btm_ValRef.Location = New System.Drawing.Point(215, 107)
+        Me.Btm_ValRef.Name = "Btm_ValRef"
+        Me.Btm_ValRef.Size = New System.Drawing.Size(133, 50)
+        Me.Btm_ValRef.TabIndex = 7
+        Me.Btm_ValRef.Text = "Button1"
+        Me.Btm_ValRef.UseVisualStyleBackColor = True
         '
         'Frm_Principal_01
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(800, 450)
-        Me.Controls.Add(Me.btm_ValRef)
-        Me.Controls.Add(Me.btm_acao2)
-        Me.Controls.Add(Me.txt_incremento)
-        Me.Controls.Add(Me.txt_saldo)
-        Me.Controls.Add(Me.lbl_incremento)
-        Me.Controls.Add(Me.lbl_saldo)
-        Me.Controls.Add(Me.btm_acao)
-        Me.Controls.Add(Me.lbl_Principal)
+        Me.ClientSize = New System.Drawing.Size(378, 251)
+        Me.Controls.Add(Me.Btm_ValRef)
+        Me.Controls.Add(Me.Btm_Acao2)
+        Me.Controls.Add(Me.Txt_Incremento)
+        Me.Controls.Add(Me.Txt_Saldo)
+        Me.Controls.Add(Me.Lbl_Incremento)
+        Me.Controls.Add(Me.Lbl_Saldo)
+        Me.Controls.Add(Me.Btm_Acao)
+        Me.Controls.Add(Me.Lbl_Principal)
         Me.Name = "Frm_Principal_01"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Form1"
@@ -121,12 +121,12 @@ Partial Class Frm_Principal_01
 
     End Sub
 
-    Friend WithEvents lbl_Principal As Label
-    Friend WithEvents btm_acao As Button
-    Friend WithEvents lbl_saldo As Label
-    Friend WithEvents lbl_incremento As Label
-    Friend WithEvents txt_saldo As TextBox
-    Friend WithEvents txt_incremento As TextBox
-    Friend WithEvents btm_acao2 As Button
-    Friend WithEvents btm_ValRef As Button
+    Friend WithEvents Lbl_Principal As Label
+    Friend WithEvents Btm_Acao As Button
+    Friend WithEvents Lbl_Saldo As Label
+    Friend WithEvents Lbl_Incremento As Label
+    Friend WithEvents Txt_Saldo As TextBox
+    Friend WithEvents Txt_Incremento As TextBox
+    Friend WithEvents Btm_Acao2 As Button
+    Friend WithEvents Btm_ValRef As Button
 End Class

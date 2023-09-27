@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{E8989014-7EC0-4C6E-B85F-09A40D619A8D}</ProjectGuid>
+    <ProjectGuid>{0F8E29D0-DF3C-4366-B783-29FBCC2E24D2}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <StartupObject>_2___ByteBank.My.MyApplication</StartupObject>
     <RootNamespace>_2___ByteBank</RootNamespace>
@@ -13,7 +13,6 @@
     <MyType>WindowsForms</MyType>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
-    <Deterministic>true</Deterministic>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
