@@ -83,6 +83,9 @@ Public Class Frm_Principal_02
             " Conta Corrente: " + ContaDoBruno.Conta.ToString
         Txt_SaldoAtual_Bruno.Text = ContaDoBruno.Saldo.ToString
 
+
+        lbl_NumeroClientes.Text = "O numero de clientes é: " + Cliente.NumeroClientes.ToString
+
     End Sub
 
     Private Sub Btm_Depositar_Gabriela_Click(sender As Object, e As EventArgs) Handles Btm_Depositar_Gabriela.Click
